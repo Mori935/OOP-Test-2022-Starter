@@ -69,9 +69,5 @@ public class Nematode {
         this.eyes = eyes;
     }
 
-    public void render(NematodeVisualiser pa){
-        pa.fill(255);
-        pa.textSize(50);
-        pa.textAlign(PApplet.CENTER, PApplet.CENTER);
-    }
+
 }
