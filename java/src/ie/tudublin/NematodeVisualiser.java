@@ -10,7 +10,7 @@ public class NematodeVisualiser extends PApplet
 {
 
 	ArrayList<Nematode> Nema = new ArrayList<Nematode>();
-    public float border;
+    
 
 	public void keyPressed()
 	{		
@@ -31,6 +31,13 @@ public class NematodeVisualiser extends PApplet
 		background(0);
 		smooth();			
 	}
+
+	void printNematodes(){
+        for(Nematode n:Nema)
+        {
+            System.out.println(n);
+        }
+    }
 	
 
 	public void loadNematodes()
@@ -42,6 +49,8 @@ public class NematodeVisualiser extends PApplet
             Nema.add(n);
         }
 	}
+
+
 
 
 	public void draw()
