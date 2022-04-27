@@ -29,7 +29,9 @@ public class NematodeVisualiser extends PApplet
 	{
 		colorMode(HSB);
 		background(0);
-		smooth();			
+		smooth();	
+		loadNematodes();
+		printNematodes();		
 	}
 
 	void printNematodes(){
